@@ -1,0 +1,45 @@
+name: py3jaxpt
+channels:
+  - defaults
+dependencies:
+  - black
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::cpuonly
+  - h5py
+  - matplotlib
+  - mypy 
+  - nb_conda
+  - numpy
+  - pandas
+  - pillow
+  - pip
+  - pylint
+  - pytest
+  - python>=3.8
+  - protobuf
+  - scipy
+  - scikit-learn
+  - scikit-image
+  - scikit-learn-intelex
+  - imageio
+  - seaborn
+  - absl-py
+  - simpleitk::simpleitk
+  - pip:
+    # # manual installation
+    - jax[cuda12_pip]
+    - -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+    - optax
+    - flax
+    - jax-resnet
+    - git+https://github.com/LeonhardFeiner/augmax
+    - numpyro
+    - tikzplotlib
+    - crc32c
+    - tensorboardX
+    - tqdm
+    - einops
+    - more_itertools
+    - albumentations
+    - nibabel
